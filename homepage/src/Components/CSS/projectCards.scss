@@ -1,0 +1,40 @@
+.cards {
+    margin-top: 8vh;
+    position: relative;
+}
+
+.cards .item {
+    position: relative;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-bottom: 4vh;
+    width: 60%;
+    left: 20%;
+}
+
+.cards img {
+    height: 60vh;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.cards .title {
+    font-size: 1.5em;
+}
+
+.cards .desc {
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cards img {
+        width: 85vw;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    .cards .item {
+        width: 80%;
+        left: 10%;
+    }
+}

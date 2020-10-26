@@ -1,0 +1,109 @@
+@import "../../Constants/ConstantStyles";
+
+#contact {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    width: 100%;
+    background-image: linear-gradient(
+        to right top,
+        #b5c6e0,
+        #acd4e4,
+        #b0dfdd,
+        #c4e7d2,
+        #e2eccb
+    );
+}
+#contact a {
+    text-decoration: none;
+}
+#contact > h1 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 3em;
+    color: $textDark;
+}
+#contact div h1 {
+    padding-bottom: 5vh;
+    font-size: 2em;
+    color: $textDark;
+    opacity: 0.9;
+}
+.contact-reach-sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: $textlight;
+}
+.reach-item a {
+    color: $darkGray;
+}
+.reach-item a:visited {
+    color: $darkGray;
+}
+.reach-item a:hover {
+    color: $textGray;
+}
+.reach-icon {
+    padding: 15px;
+    font-size: 2.5em;
+    color: #666;
+}
+.reach-item p {
+    max-width: 11vw;
+    min-width: 5vw;
+}
+.reach-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.social-item a {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.contact-social-sub {
+    margin-bottom: 10vh;
+}
+.social-item svg {
+    width: 3%;
+    min-width: 36px;
+    height: auto;
+    fill: $textlight;
+}
+#linkedIn svg:hover {
+    fill: #0077b5;
+}
+#twitter svg:hover {
+    fill: #1da1f2;
+}
+#telegram svg:hover {
+    fill: #0088cc;
+}
+#instagram svg:hover {
+    fill: #e1306c;
+}
+@media only screen and (max-width: 900px) {
+    .reach-icon {
+        padding: 15px;
+        font-size: 2em;
+        color: #666;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .reach-item > a {
+        display: none;
+    }
+    .reach-item > p {
+        display: none;
+    }
+    .social-item a {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .reach-item {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
