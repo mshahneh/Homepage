@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./CSS/Projects.css";
+import "./CSS/Projects.scss";
 import ArrorRight from "react-icons/lib/fa/arrow-circle-o-right";
 let Images = {
     vision: require("../Images/vision.jpg"),

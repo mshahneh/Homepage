@@ -1,0 +1,25 @@
+@import "../../Constants/ConstantStyles";
+
+.tab{
+  display: flex;
+  justify-content: center;
+}
+
+.tabItem{
+  font-size: 1.1em;
+  padding: 0.9vw;
+  margin: 0.5vw;
+  border: 0 solid transparent;
+  border-radius: 16px;
+}
+
+.deactiveTab:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.activeTab{
+  box-shadow: 0 2px 4px 0 rgba(5,5,5,0.15);
+  background-color: rgba(255, 255, 255, 0.05);
+  font-weight: 425;
+}

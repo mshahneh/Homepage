@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./CSS/projectCards.css";
+import "./CSS/projectCards.scss";
 
 class Chess extends Component {
     render() {

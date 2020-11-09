@@ -2,9 +2,9 @@
 $darkGray: #282c34;
 $lightGray: #969799;
 
-$textDark: #333;
-$textlight: #555;
-$textGray: #999;
+$textDark: #1e1e1e;
+$textlight: #666;
+$textGray: #797981;
 $textHover: #eee;
 $textPrimaryDark: #00494f;
 $textPrimary: #00696f;
@@ -12,9 +12,23 @@ $grayline: #383838;
 
 $resumeBackground: #f9f9f9;
 
-$primaryColor: #60d7a9;
+$primaryColor: #50a37e;
 $primaryDarkColor: #00696f;
-$accentColor: #1ca7b8;
+$accentColor: #ff5722;
 
 $font-large: 1.1em;
 $font-medium: 1em;
+
+$screen0: #ffffff;
+$screen1: #ffffff;
+$screen2: $primaryColor;
+$screen3: #ffffff;
+
+$marginLarge: 3em;
+
+:export {
+  screenColors: ($screen0, $screen1, $screen2, $screen3);
+  textColor: $textDark;
+  primaryColor: $primaryColor;
+  secondaryColor: $accentColor;
+}

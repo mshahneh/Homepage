@@ -1,19 +1,49 @@
+// import React, { Component } from "react";
+// import "./CSS/AboutMe.css";
+//
+// class AboutMe extends Component {
+//     render() {
+//         return (
+//             <div id="aboutme">
+//                 <div id="color1" />
+//                 <div id="color2" />
+//                 <div id="color3" />
+//                 <div class="about">
+//                     <div className="tr">
+//                         <img src={require("../Images/mohammadreza.jpg")} />
+//                     </div>
+//                     <div className="tr">
+//                         <h2>Hi!</h2>
+//                         <pr>
+//                             I am Mohammadreza Zare Shahneh, a senior Computer
+//                             Science undergraduate in the Mathematical Sciences
+//                             Department at Sharif University of Technology.
+//                         </pr>
+//                     </div>
+//                 </div>
+//             </div>
+//         );
+//     }
+// }
+//
+// export default AboutMe;
+
 import React, { Component } from "react";
-import "./CSS/AboutMe.css";
+import "./CSS/AboutMe.scss";
 
 class AboutMe extends Component {
     render() {
         return (
             <div id="aboutme">
-                <div id="color1" />
-                <div id="color2" />
-                <div id="color3" />
-                <div class="about">
-                    <div className="tr">
-                        <img src={require("../Images/mohammadreza.jpg")} />
+                <h1>
+                    About me
+                </h1>
+                <div id={"personal"}>
+                    <div id={"mypic"}>
+                        <img src={require("../Images/me.png")} alt={"My image"}/>
                     </div>
-                    <div className="tr">
-                        <h2>Hi!</h2>
+                    <div id={"mybio"}>
+                        <h1>Hello, I am <span className={"colorText"}>Mohammad Reza </span></h1>
                         <pr>
                             I am Mohammadreza Zare Shahneh, a senior Computer
                             Science undergraduate in the Mathematical Sciences
@@ -27,3 +57,4 @@ class AboutMe extends Component {
 }
 
 export default AboutMe;
+

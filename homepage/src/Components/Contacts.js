@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./CSS/Contact.css";
+import "./CSS/Contact.scss";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -74,22 +74,34 @@ class Contacts extends Component {
                     <div>
                         <h1>Reach me</h1>
                         <div className="contact-reach-sub">
-                            <div className="reach-item">
+                            {/*<div className="reach-item">*/}
+                            {/*    <FontAwesomeIcon*/}
+                            {/*        icon="map-marker"*/}
+                            {/*        className="reach-icon"*/}
+                            {/*    />*/}
+                            {/*    <p>*/}
+                            {/*        Sharif University of Technology, Azadi Ave,*/}
+                            {/*        Tehran, Iran*/}
+                            {/*    </p>*/}
+                            {/*</div>*/}
+                            {/*<a href="tel:+9514256645" className="reach-item">*/}
+                            {/*    <FontAwesomeIcon*/}
+                            {/*        icon="phone"*/}
+                            {/*        className="reach-icon"*/}
+                            {/*    />*/}
+                            {/*    <a href="tel:+9514256645"> +9514256645</a>*/}
+                            {/*</a>*/}
+                            <a
+                                href="mailto:mzare008@ucr.edu"
+                                className="reach-item"
+                            >
                                 <FontAwesomeIcon
-                                    icon="map-marker"
+                                    icon="envelope"
                                     className="reach-icon"
                                 />
-                                <p>
-                                    Sharif University of Technology, Azadi Ave,
-                                    Tehran, Iran
-                                </p>
-                            </div>
-                            <a href="tel:+989397710828" className="reach-item">
-                                <FontAwesomeIcon
-                                    icon="phone"
-                                    className="reach-icon"
-                                />
-                                <a href="tel:+989397710828"> +989397710828</a>
+                                <a href="mailto:mzare008@ucr.edu">
+                                    mzare008@ucr.edu
+                                </a>
                             </a>
                             <a
                                 href="mailto:mohammadreza.shahneh@gmail.com"

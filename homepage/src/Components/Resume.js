@@ -1,17 +1,34 @@
 import React, { Component } from "react";
-import "./CSS/Resume.css";
+import "./CSS/Resume.scss";
 import FaPDF from "react-icons/lib/fa/file-pdf-o";
+import Tab from "./Tab";
 
 class Resume extends Component {
+    constructor(props) {
+        super();
+        this.state = {
+            selectedTab:0
+        }
+    }
+    tab_item_click(num){
+        this.setState({ selectedTab: num });
+        // window.history.pushState(null, menuItems[num], `/${menuItems[num]}`);
+    }
     render() {
         return (
             <div id="resume">
-                <div id="resume-title">
+                <div className="title">
                     <h1>Resume</h1>
                     <a href={require("../Constants/CVMohammadReza.pdf")}>
                         <FaPDF style={{ color: "#944" }} /> Download PDF version
                     </a>
                 </div>
+                {/*<div className={"title"}>*/}
+                {/*    <h1>Resume</h1>*/}
+                {/*    <Tab tabItems={["CV", "resume"]}*/}
+                {/*         onClick={(x) => this.tab_item_click(x)}*/}
+                {/*         activeTab={this.state.selectedTab}/>*/}
+                {/*</div>*/}
                 <div id="resume-main">
                     <div className="resume-row">
                         <p>Research Interests</p>

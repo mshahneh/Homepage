@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import posed, { PoseGroup } from "react-pose";
-import "./CSS/Projects.css";
+import "./CSS/Projects.scss";
 import ProjectCard from "./ProjectCard.js";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -11,6 +11,7 @@ import Vision from "./Vision.js";
 import Chess from "./Chess.js";
 import Android from "./Android.js";
 import Art from "./Art.js";
+import Tab from "./Tab"
 
 library.add(faTimesCircle);
 
@@ -33,6 +34,46 @@ const Shade = posed.div({
     exit: { opacity: 0 }
 });
 
+let Research = [
+    {
+        name: "Vision",
+        title: "Computer Vision",
+        desc: "some image processing and computer vision methods",
+        image: "vision"
+    }];
+
+let Applications = [
+    {
+        name: "Chess",
+        title : "Graphical Chess",
+        desc : "Written in java. supporting both 1v1 and AI",
+        image : "chess"
+    },
+    {
+        name: "Calc",
+        title: "Graphical Calculator",
+        desc: "basic mathematical functions e.g. sin, log, etc. with ability to draw graphs",
+        image: "calc"
+    },
+    {
+        name: "Android",
+        title: "Android App",
+        desc: "Location based social media Application (group project)",
+        image: "android"
+    },
+    {
+        name: "Site",
+        title:"Website Design",
+        desc:"a project for Ronash Corporation",
+        image:"site",
+    },
+    {
+        name: "Art",
+        title: "Paintings",
+        desc: "some paintings by me",
+        image: "art",
+    }];
+
 class Projects extends Component {
     constructor(props) {
         super(props);
@@ -47,86 +88,55 @@ class Projects extends Component {
         };
         let url = window.location.href.toLowerCase();
         if (url.includes("/projects/vision"))
-            this.state = { projects: projects, showing: "Vision" };
+            this.state = { projects: projects, selectedTab:0, showing: "Vision" };
         else if (url.includes("/projects/app"))
-            this.state = { projects: projects, showing: "Android" };
+            this.state = { projects: projects, selectedTab:0, showing: "Android" };
         else if (url.includes("/projects/chess"))
-            this.state = { projects: projects, showing: "Chess" };
+            this.state = { projects: projects, selectedTab:0, showing: "Chess" };
         else if (url.includes("/projects/art"))
-            this.state = { projects: projects, showing: "Art" };
+            this.state = { projects: projects, selectedTab:0, showing: "Art" };
         else if (url.includes("/projects/site"))
-            this.state = { projects: projects, showing: "Site" };
+            this.state = { projects: projects, selectedTab:0, showing: "Site" };
         else if (url.includes("/projects/calc"))
-            this.state = { projects: projects, showing: "Calc" };
-        else this.state = { projects: projects, showing: "none" };
+            this.state = { projects: projects, selectedTab:0, showing: "Calc" };
+        else this.state = { projects: projects, selectedTab:0, showing: "none" };
     }
 
     handler(str) {
-        window.history.pushState(null, "", ``);
+        window.history.pushState(null, "", `/projects/${str}`);
         this.setState({
             showing: str
         });
     }
 
+    tab_item_click(num){
+        this.setState({ selectedTab: num });
+        // window.history.pushState(null, menuItems[num], `/${menuItems[num]}`);
+    }
+
     render() {
+        let tabProjects = Research;
+        if(this.state.selectedTab == 1)
+            tabProjects = Applications;
+
         return (
             <div id="projects">
-                <h1>My Works!</h1>
+                <div className={"title"}>
+                    <h1>My Works!</h1>
+                    <Tab tabItems={["Research", "Applications"]}
+                         onClick={(x) => this.tab_item_click(x)}
+                         activeTab={this.state.selectedTab}/>
+                </div>
                 <div className="archive">
-                    <ProjectCard
-                        onClick={() => {
-                            this.handler("Vision");
-                        }}
-                        title={"Computer Vision"}
-                        desc={
-                            "some image processing and computer vision methods"
-                        }
-                        image={"vision"}
-                    />
-                    <ProjectCard
-                        onClick={() => {
-                            this.handler("Chess");
-                        }}
-                        title={"Graphical Chess"}
-                        desc={"Written in java. supporting both 2v2 and AI"}
-                        image={"chess"}
-                    />
-                    <ProjectCard
-                        onClick={() => {
-                            this.handler("Calc");
-                        }}
-                        title={"Graphical Calculator"}
-                        desc={
-                            "basic mathematical functions e.g. sin, log, etc. with ability to draw graphs"
-                        }
-                        image={"calc"}
-                    />
-                    <ProjectCard
-                        onClick={() => {
-                            this.handler("Android");
-                        }}
-                        title={"Android App"}
-                        desc={
-                            "Location based social media Application (group project)"
-                        }
-                        image={"android"}
-                    />
-                    <ProjectCard
-                        onClick={() => {
-                            this.handler("Site");
-                        }}
-                        title={"Website Design"}
-                        desc={"a project for Ronash Corporation"}
-                        image={"site"}
-                    />
-                    <ProjectCard
-                        onClick={() => {
-                            this.handler("Art");
-                        }}
-                        title={"Paintings"}
-                        desc={"some paintings by me"}
-                        image={"art"}
-                    />
+                    {
+                        tabProjects.map((item) => <ProjectCard
+                            onClick={() => this.handler(item.name)}
+                            title={item.title}
+                            desc={item.desc}
+                            image={item.image}
+                            />
+                            )
+                    }
                 </div>
                 <PoseGroup>
                     {this.state.showing !== "none" && [
@@ -134,7 +144,7 @@ class Projects extends Component {
                             key="shade"
                             className="shade"
                             onClick={() => {
-                                window.history.pushState(null, "", "");
+                                window.history.pushState(null, "projects", "/projects");
                                 this.setState({ showing: "none" });
                             }}
                         />,
@@ -143,7 +153,7 @@ class Projects extends Component {
                                 icon="times-circle"
                                 className="close"
                                 onClick={() => {
-                                    window.history.pushState(null, "", "");
+                                    window.history.pushState(null, "projects", "/projects");
                                     this.setState({ showing: "none" });
                                 }}
                             >
