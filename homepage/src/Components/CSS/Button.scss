@@ -8,9 +8,17 @@
 
 .deactive-button:hover{
   cursor: pointer;
-  color: $primaryColor;
+  color: $textGray;
 }
 
 .active-button{
-  color: $textlight;
+  color: $primaryColor;
+  font-weight: 450;
+}
+
+@media only screen and (max-width: 700px) {
+  .button{
+    padding: 0.5em;
+    font-size: 0.9em;
+  }
 }

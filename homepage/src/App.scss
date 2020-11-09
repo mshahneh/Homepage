@@ -42,15 +42,15 @@ body {
     }
 }
 
-.RightPanel {
-    width: 100%;
-    height: 10vh;
-    margin: 0;
-    padding: 0;
-    background-color: $darkGray;
-    //overflow-y: auto;
-    //overflow-x: hidden;
-}
+//.RightPanel {
+//    width: 100%;
+//    height: 10vh;
+//    margin: 0;
+//    padding: 0;
+//    background-color: $darkGray;
+//    //overflow-y: auto;
+//    //overflow-x: hidden;
+//}
 
 .mainView {
     width: 100%;
@@ -112,24 +112,24 @@ li:hover {
 }
 
 @media only screen and (max-width: 900px) {
-    .RightPanel {
-        width: 22%;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        float: left;
-        background-color: $darkGray;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-    .mainView {
-        width: 78%;
-        position: relative;
-        overflow: hidden;
-    }
-    .RightPanel img {
-        display: none;
-    }
+    //.RightPanel {
+    //    width: 22%;
+    //    height: 100vh;
+    //    margin: 0;
+    //    padding: 0;
+    //    float: left;
+    //    background-color: $darkGray;
+    //    overflow-y: auto;
+    //    overflow-x: hidden;
+    //}
+    //.mainView {
+    //    width: 78%;
+    //    position: relative;
+    //    overflow: hidden;
+    //}
+    //.RightPanel img {
+    //    display: none;
+    //}
 }
 
 

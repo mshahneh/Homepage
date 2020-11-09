@@ -54,9 +54,7 @@ class App extends Component {
     componentDidUpdate()
     {
         window.onpopstate = (e) => {
-            console.log("back clicked!");
             var url = window.location.href;
-            console.log(url, this.state)
             if (url.includes("/about")) this.setState({ selectedScreen: 0 });
             else if (url.includes("/resume")) this.setState({ selectedScreen: 1 });
             else if (url.includes("/projects")) this.setState({ selectedScreen: 2 });
@@ -72,7 +70,6 @@ class App extends Component {
     }
 
     menu_item_click(num){
-        console.log(num);
         this.setState({ selectedScreen: num });
         window.history.pushState(null, menuItems[num], `/${menuItems[num]}`);
     }

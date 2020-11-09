@@ -10,7 +10,7 @@ let menu_items = ["About Me", "Resume", "Projects", "Contact Me"];
 
 class Menu extends Component {
     render() {
-        let barColor = styles.screenColors.split(' ')[this.props.selectedScreen].substring(0, 7);
+        // let barColor = styles.screenColors.split(' ')[this.props.selectedScreen].substring(0, 7);
         return(
             <div id={"Menu"} >
                 <div onClick={() => this.props.click(0)} className={"left"}> Mohammad Reza Zare Shahneh </div>

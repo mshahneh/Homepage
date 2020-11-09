@@ -20,35 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbe0f38b-8d60-4151-adf9-f6b8c60147f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/CSS/Button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/CSS/Menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/CSS/Tab.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Tab.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Android.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Android.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Art.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Art.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CSS/AboutMe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/CSS/AboutMe.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/AboutMe.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Contact.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Projects.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/CSS/Projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Projects.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Resume.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/CSS/Resume.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Resume.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CSS/projectCards.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Chess.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Chess.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ProjectCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ProjectCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Tab.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Tab.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Resume.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Vision.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Vision.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Constants/_ConstantStyles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants/_ConstantStyles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +83,7 @@
       <workItem from="1593544470915" duration="2966000" />
       <workItem from="1603609143198" duration="6369000" />
       <workItem from="1604644581951" duration="19580000" />
-      <workItem from="1604783845414" duration="8888000" />
+      <workItem from="1604783845414" duration="17990000" />
     </task>
     <servers />
   </component>
@@ -127,9 +111,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604653998324" />
-    <state x="447" y="-908" width="586" height="735" key="find.popup" timestamp="1604796101635">
+    <state x="447" y="-908" width="586" height="735" key="find.popup" timestamp="1604962549959">
       <screen x="-220" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="447" y="-908" width="586" height="735" key="find.popup/0.0.1440.900/-220.-1080.1920.1080@-220.-1080.1920.1080" timestamp="1604796101635" />
+    <state x="447" y="-908" width="586" height="735" key="find.popup/0.0.1440.900/-220.-1080.1920.1080@-220.-1080.1920.1080" timestamp="1604962549959" />
   </component>
 </project>

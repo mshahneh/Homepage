@@ -19,7 +19,7 @@ class Resume extends Component {
             <div id="resume">
                 <div className="title">
                     <h1>Resume</h1>
-                    <a href={require("../Constants/CVMohammadReza.pdf")}>
+                    <a href={require("../Constants/CV.pdf")}>
                         <FaPDF style={{ color: "#944" }} /> Download PDF version
                     </a>
                 </div>
@@ -48,45 +48,22 @@ class Resume extends Component {
                         <div>
                             <div className="item">
                                 <p className="title">
-                                    Sharif University of Technology, Tehran,
-                                    Iran (2014 - Present)
+                                    University of California Riverside, Riverside,
+                                    USA (2019 - Present)
                                 </p>
                                 <p className="content">
-                                    B.Sc in Computer Science GPA to date:
-                                    17.35/20
+                                    M.Sc in Computer Science GPA:
+                                    3.95/4
                                 </p>
                             </div>
                             <div className="item">
-                                <p className="title">Relevant courses</p>
-                                <p className="content">
-                                    Principals of Image Processing (18.7/20)
+                                <p className="title">
+                                    Sharif University of Technology, Tehran,
+                                    Iran (2014 - 2019)
                                 </p>
                                 <p className="content">
-                                    Computer Vision (18.2/20)
-                                </p>
-                                <p className="content">
-                                    Some Topics in Cumputer science (3D Reconstruction) (16.5/20)
-                                </p>
-                                <p className="content">
-                                    Artificial Intelligence(18.6/20)
-                                </p>
-                                <p className="content">
-                                    Design and Analysis of Algorithms(20/20)
-                                </p>
-                                <p className="content">
-                                    Graphs and Applications(18.1/20)
-                                </p>
-                                <p className="content">
-                                    Theory of Computation (18.7)
-                                </p>
-                                <p className="content">
-                                    Linear Programming(20/20)
-                                </p>
-                                <p className="content">
-                                    Stochastic Processes (20/20)
-                                </p>
-                                <p className="content">
-                                    Statistics and Application(17.7/20)
+                                    B.Sc in Computer Science GPA:
+                                    17.35/20
                                 </p>
                             </div>
                         </div>
@@ -101,16 +78,18 @@ class Resume extends Component {
                                     in the Iranian National Olympiad in
                                     Informatics (2013)
                                 </p>
-                            </div>
-                            <div className="item">
+                                <p className="content">
+                                    UCR’s Graduate Fellowship Award (2019-2020)
+                                </p>
+                                <p className="content">
+                                    ranked 4th in Iran’s national university entrance exam (Konkour) for masters degree(2019)
+                                </p>
+                                <p className="content">
+                                    Scholarship from Iran's National Elites Foundation for the first year of university
+                                </p>
                                 <p className="content">
                                     Ranked 6<sup>th</sup> in the ACM-IPC
                                     Contest, Shiraz, Iran (2014)
-                                </p>
-                            </div>
-                            <div className="item">
-                                <p className="content">
-                                    Scholarship from Iran's National Elites Foundation for the first year of university.
                                 </p>
                             </div>
                         </div>
@@ -121,11 +100,25 @@ class Resume extends Component {
                         <div>
                             <div className="item">
                                 <p className="title">
+                                    Generalizing Geographically Weighted Regression Model (ongoing)
+                                </p>
+                                <p className="content">
+                                    With Prof. Oymak and Prof. Magdy
+                                </p>
+                                <p className="content">
+                                    Improving the speed and accuracy of a spatially-varrying coefficient model
+                                </p>
+                            </div>
+                            <div className="item">
+                                <p className="title">
                                     Detecting and Recognizing Persian texts in
-                                    Images (ongoing)
+                                    Images (Summer 2018 - Winter 2019)
                                 </p>
                                 <p className="content">
                                     under supervision of Dr. Mostafa Kamali
+                                </p>
+                                <p className="content">
+                                    An end-to-end trainable scene text detector with our own synthetic text generator engine without any humanlabelled data
                                 </p>
                             </div>
                         </div>
@@ -135,7 +128,13 @@ class Resume extends Component {
                         <p>Teaching Experience</p>
                         <div>
                             <div className="item">
-                                <p className="title">Teaching Assistant</p>
+                                <p className="title">Teaching Assistant at UCR</p>
+                                <p className="content">
+                                    Introduction to Programming (Fall 2020)
+                                </p>
+                            </div>
+                            <div className="item">
+                                <p className="title">Teaching Assistant at SUT</p>
                                 <p className="content">
                                     Advanced Programming, Dr. Boomari, Spring
                                     2016
@@ -159,7 +158,7 @@ class Resume extends Component {
                                     Data structures, Dr. Foroughmand, Fall 2018
                                 </p>
                                 <p className="content">
-                                    Basic Programming, Dr. Zarei, Fall 2018
+                                    Basic Programming, Dr. Zarei, Winter 2018
                                 </p>
                             </div>
                             <div className="item">

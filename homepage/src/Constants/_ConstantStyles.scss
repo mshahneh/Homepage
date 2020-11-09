@@ -6,15 +6,28 @@ $textDark: #1e1e1e;
 $textlight: #666;
 $textGray: #797981;
 $textHover: #eee;
-$textPrimaryDark: #00494f;
-$textPrimary: #00696f;
+
+
+//$resumeBackground: #08333e;
+//$resumetextPrimaryDark: #15cac3;
+//$resumeTextPrimary: #75ced9;
+//$resumeText: #eee;
+
+
+$resumeBackground: #fefefe;
+$resumetextPrimaryDark: #0e605d;
+$resumeTextPrimary: #15727e;
+$resumeText: $textDark;
+
+$projectsBackground: #fff;
+
 $grayline: #383838;
 
-$resumeBackground: #f9f9f9;
+
 
 $primaryColor: #50a37e;
 $primaryDarkColor: #00696f;
-$accentColor: #ff5722;
+$accentColor: #cf4523;
 
 $font-large: 1.1em;
 $font-medium: 1em;
