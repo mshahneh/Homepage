@@ -54,7 +54,7 @@ app.get("/*", function(req, res) {
     for (let i = 0; i < fileTypes.length; i++)
         {
             p = req.path.substring(req.path.length-fileTypes[i].length);
-            if(p === fileTypes[i])
+            if(p === fileTypes[i] || p === fileTypes[i].toUpperCase())
                 flag = true;
         }
 //    console.log(p, flag)
