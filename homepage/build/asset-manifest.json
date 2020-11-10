@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a51c4ffb.chunk.css",
-    "main.js": "/static/js/main.45b8159e.chunk.js",
-    "main.js.map": "/static/js/main.45b8159e.chunk.js.map",
+    "main.css": "/static/css/main.6c8f8cf8.chunk.css",
+    "main.js": "/static/js/main.023e8e06.chunk.js",
+    "main.js.map": "/static/js/main.023e8e06.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.933364b2.js",
     "runtime-main.js.map": "/static/js/runtime-main.933364b2.js.map",
     "static/js/2.c9cfa2b4.chunk.js": "/static/js/2.c9cfa2b4.chunk.js",
     "static/js/2.c9cfa2b4.chunk.js.map": "/static/js/2.c9cfa2b4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e0d3a0a0049ea8eed93d0e8b7dad2d72.js": "/precache-manifest.e0d3a0a0049ea8eed93d0e8b7dad2d72.js",
+    "precache-manifest.c8c477ce0b2e89cc3d45a05ebb437cbb.js": "/precache-manifest.c8c477ce0b2e89cc3d45a05ebb437cbb.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a51c4ffb.chunk.css.map": "/static/css/main.a51c4ffb.chunk.css.map",
+    "static/css/main.6c8f8cf8.chunk.css.map": "/static/css/main.6c8f8cf8.chunk.css.map",
     "static/js/2.c9cfa2b4.chunk.js.LICENSE.txt": "/static/js/2.c9cfa2b4.chunk.js.LICENSE.txt",
     "static/media/CV.pdf": "/static/media/CV.cd43d9af.pdf",
     "static/media/Deep_learning_project_report.pdf": "/static/media/Deep_learning_project_report.b2ace63f.pdf",
@@ -33,8 +33,8 @@
     "static/media/painting1.jpg": "/static/media/painting1.a397e131.jpg",
     "static/media/painting2.jpg": "/static/media/painting2.f4521108.jpg",
     "static/media/panorama.jpg": "/static/media/panorama.ab1a4da1.jpg",
-    "static/media/pedestrian detection.jpg": "/static/media/pedestrian detection.31c83431.jpg",
-    "static/media/pedestrian.JPG": "/static/media/pedestrian.8105b249.JPG",
+    "static/media/pedestrian.jpg": "/static/media/pedestrian.8105b249.jpg",
+    "static/media/pedestriandetection.jpg": "/static/media/pedestriandetection.31c83431.jpg",
     "static/media/puzzle-box.png": "/static/media/puzzle-box.3cfcc591.png",
     "static/media/q2.gif": "/static/media/q2.d0779f56.gif",
     "static/media/shelem-create.png": "/static/media/shelem-create.52d81928.png",
@@ -50,7 +50,7 @@
   "entrypoints": [
     "static/js/runtime-main.933364b2.js",
     "static/js/2.c9cfa2b4.chunk.js",
-    "static/css/main.a51c4ffb.chunk.css",
-    "static/js/main.45b8159e.chunk.js"
+    "static/css/main.6c8f8cf8.chunk.css",
+    "static/js/main.023e8e06.chunk.js"
   ]
 }

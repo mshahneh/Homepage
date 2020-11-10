@@ -10,7 +10,7 @@ class Pedestrian extends Component {
                     <p className="desc">
                         I'll add the video demo and work description soon ;)
                     </p>
-                    <img src={require("../../Images/pedestrian detection.jpg")} />
+                    <img src={require("../../Images/pedestriandetection.jpg")} />
                 </div>
             </div>
         );

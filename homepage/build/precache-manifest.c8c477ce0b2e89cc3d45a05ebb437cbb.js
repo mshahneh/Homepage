@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8198ffa55b4e7d04ba13893ae937914f",
+    "revision": "a06806587a390b110d694aeb4c49634a",
     "url": "/index.html"
   },
   {
-    "revision": "8c402cec054cfad52328",
-    "url": "/static/css/main.a51c4ffb.chunk.css"
+    "revision": "5043e46c01288ee52004",
+    "url": "/static/css/main.6c8f8cf8.chunk.css"
   },
   {
     "revision": "54511ebe524b3113c846",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.c9cfa2b4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8c402cec054cfad52328",
-    "url": "/static/js/main.45b8159e.chunk.js"
+    "revision": "5043e46c01288ee52004",
+    "url": "/static/js/main.023e8e06.chunk.js"
   },
   {
     "revision": "7fd8f8b23b79231f3b83",
@@ -108,12 +108,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/panorama.ab1a4da1.jpg"
   },
   {
-    "revision": "31c83431e5e24c2fda7e28f5a395f38b",
-    "url": "/static/media/pedestrian detection.31c83431.jpg"
+    "revision": "8105b24971e5ad871dbeb98e73f85f70",
+    "url": "/static/media/pedestrian.8105b249.jpg"
   },
   {
-    "revision": "8105b24971e5ad871dbeb98e73f85f70",
-    "url": "/static/media/pedestrian.8105b249.JPG"
+    "revision": "31c83431e5e24c2fda7e28f5a395f38b",
+    "url": "/static/media/pedestriandetection.31c83431.jpg"
   },
   {
     "revision": "3cfcc5916e618a1d1a50158598947088",

@@ -9,7 +9,7 @@ let Images = {
     art: require("../Images/art.jpg"),
     site: require("../Images/site.png"),
     covid: require("../Images/covid.png"),
-    pedestrian: require("../Images/pedestrian.JPG"),
+    pedestrian: require("../Images/pedestrian.jpg"),
     shelem: require("../Images/shelem.png")
 };
 
