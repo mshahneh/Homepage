@@ -7,7 +7,10 @@ let Images = {
     calc: require("../Images/calc.png"),
     android: require("../Images/android.png"),
     art: require("../Images/art.jpg"),
-    site: require("../Images/site.png")
+    site: require("../Images/site.png"),
+    covid: require("../Images/covid.png"),
+    pedestrian: require("../Images/pedestrian.JPG"),
+    shelem: require("../Images/shelem.png")
 };
 
 class ProjectCard extends Component {

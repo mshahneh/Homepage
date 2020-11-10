@@ -7,10 +7,15 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 
-import Vision from "./Vision.js";
-import Chess from "./Chess.js";
-import Android from "./Android.js";
-import Art from "./Art.js";
+import Vision from "./projects/Vision.js";
+import Chess from "./projects/Chess.js";
+import Unagi from "./projects/Android.js";
+import Art from "./projects/Art.js";
+import Calc from "./projects/Calc.js";
+import Shelem from "./projects/Shelem.js";
+import Ronash from "./projects/ronash"
+import Covid from  "./projects/Covid"
+import Pedestrian from "./projects/Pedestrian";
 import Tab from "./Tab"
 
 library.add(faTimesCircle);
@@ -36,13 +41,32 @@ const Shade = posed.div({
 
 let Research = [
     {
+        name: "Covid",
+        title: "Covid-19 Detection",
+        desc: "Detecting Covid-19 cases using chest X-Ray images. Combining multiple customized neural network using adaboost",
+        image: "covid"
+    },
+    {
+        name: "Pedestrian",
+        title: "Pedestrian Tracking",
+        desc: "Detecting and tracking pedestrians in videos",
+        image: "pedestrian"
+    },
+    {
         name: "Vision",
         title: "Computer Vision",
         desc: "some image processing and computer vision methods",
         image: "vision"
-    }];
+    },
+];
 
 let Applications = [
+    {
+        name: "Shelem",
+        title : "Shelem Application",
+        desc : "A multiplayer and online version of an extremely popular card game in Iran",
+        image : "shelem"
+    },
     {
         name: "Chess",
         title : "Graphical Chess",
@@ -56,7 +80,7 @@ let Applications = [
         image: "calc"
     },
     {
-        name: "Android",
+        name: "Unagi",
         title: "Android App",
         desc: "Location based social media Application (group project)",
         image: "android"
@@ -80,25 +104,34 @@ class Projects extends Component {
         this.handler = this.handler.bind(this);
         let projects = {
             Vision: <Vision />,
-            Android: <Android />,
+            Unagi: <Unagi />,
             Chess: <Chess />,
-            Art: <Art />
-            // Site: <Site />,
-            // Calc: <Calc />
+            Art: <Art />,
+            Shelem: <Shelem />,
+            Site: <Ronash />,
+            Calc: <Calc />,
+            Covid: <Covid/>,
+            Pedestrian: <Pedestrian/>
         };
         let url = window.location.href.toLowerCase();
         if (url.includes("/projects/vision"))
             this.state = { projects: projects, selectedTab:0, showing: "Vision" };
-        else if (url.includes("/projects/app"))
-            this.state = { projects: projects, selectedTab:0, showing: "Android" };
+        if (url.includes("/projects/covid"))
+            this.state = { projects: projects, selectedTab:0, showing: "Covid" };
+        if (url.includes("/projects/pedestrian"))
+            this.state = { projects: projects, selectedTab:0, showing: "Pedestrian" };
+        else if (url.includes("/projects/unagi"))
+            this.state = { projects: projects, selectedTab:1, showing: "Unagi" };
         else if (url.includes("/projects/chess"))
-            this.state = { projects: projects, selectedTab:0, showing: "Chess" };
+            this.state = { projects: projects, selectedTab:1, showing: "Chess" };
         else if (url.includes("/projects/art"))
-            this.state = { projects: projects, selectedTab:0, showing: "Art" };
+            this.state = { projects: projects, selectedTab:1, showing: "Art" };
+        else if (url.includes("/projects/shelem"))
+            this.state = { projects: projects, selectedTab:1, showing: "Shelem" };
         else if (url.includes("/projects/site"))
-            this.state = { projects: projects, selectedTab:0, showing: "Site" };
+            this.state = { projects: projects, selectedTab:1, showing: "Site" };
         else if (url.includes("/projects/calc"))
-            this.state = { projects: projects, selectedTab:0, showing: "Calc" };
+            this.state = { projects: projects, selectedTab:1, showing: "Calc" };
         else this.state = { projects: projects, selectedTab:0, showing: "none" };
     }
 
@@ -118,6 +151,7 @@ class Projects extends Component {
         let tabProjects = Research;
         if(this.state.selectedTab == 1)
             tabProjects = Applications;
+        console.log(this.state.showing);
 
         return (
             <div id="projects">
