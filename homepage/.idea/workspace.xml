@@ -21,24 +21,72 @@
   <component name="ChangeListManager">
     <list default="true" id="fbe0f38b-8d60-4151-adf9-f6b8c60147f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/CSS/AboutMe.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/AboutMe.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/CSS/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/CSS/Projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Projects.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Resume.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Resume.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Tab.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Tab.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Resume.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constants/_ConstantStyles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants/_ConstantStyles.scss" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/node_modules/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/AboutMe.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-478">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/CSS/AboutMe.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="177" column="24" selection-start-line="177" selection-start-column="24" selection-end-line="177" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/CSS/Menu.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/Projects.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2300">
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/CSS/Projects.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,8 +98,59 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Components/CSS/Menu.scss" />
+        <option value="$PROJECT_DIR$/src/Components/CSS/Projects.scss" />
+        <option value="$PROJECT_DIR$/src/Components/CSS/AboutMe.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-20" />
+    <option name="width" value="1955" />
+    <option name="height" value="1104" />
+  </component>
   <component name="ProjectId" id="1juCQucORJBNKZ9azPRTrKadssK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="homepage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homepage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homepage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homepage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homepage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homepage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homepage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homepage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="CSS" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,7 +168,19 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Mohammad Reza\codes\React\Homepage\homepage\node_modules\prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -84,23 +195,71 @@
       <workItem from="1603609143198" duration="6369000" />
       <workItem from="1604644581951" duration="19580000" />
       <workItem from="1604783845414" duration="17990000" />
+      <workItem from="1604963489518" duration="1409000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1409000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="434" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604653649579">
@@ -115,5 +274,46 @@
       <screen x="-220" y="-1080" width="1920" height="1080" />
     </state>
     <state x="447" y="-908" width="586" height="735" key="find.popup/0.0.1440.900/-220.-1080.1920.1080@-220.-1080.1920.1080" timestamp="1604962549959" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Components/CSS/Menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2300">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/CSS/Projects.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/AboutMe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/CSS/AboutMe.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="177" column="24" selection-start-line="177" selection-start-column="24" selection-end-line="177" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
