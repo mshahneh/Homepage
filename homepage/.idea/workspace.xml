@@ -20,18 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbe0f38b-8d60-4151-adf9-f6b8c60147f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/projects/Covid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/projects/Pedestrian.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/projects/Shelem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/projects/ronash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Android.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/projects/Android.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Art.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/projects/Art.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/projects/Calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Chess.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/projects/Chess.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ProjectCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ProjectCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CSS/Projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CSS/Projects.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Vision.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/projects/Vision.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

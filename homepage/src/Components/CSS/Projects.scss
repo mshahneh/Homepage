@@ -121,7 +121,7 @@
     overflow-y: auto;
 }
 
-.modal .close {
+.close {
     position: fixed;
     top: 11vh;
     left: 6vw;
@@ -129,7 +129,7 @@
     color: $textDark;
 }
 
-.modal .close:hover {
+.close:hover {
     color: $textGray;
     cursor: pointer;
 }

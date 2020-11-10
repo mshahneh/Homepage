@@ -151,7 +151,6 @@ class Projects extends Component {
         let tabProjects = Research;
         if(this.state.selectedTab == 1)
             tabProjects = Applications;
-        console.log(this.state.showing);
 
         return (
             <div id="projects">
@@ -183,20 +182,24 @@ class Projects extends Component {
                             }}
                         />,
                         <Modal key="modal" className="modal">
-                            <FontAwesomeIcon
-                                icon="times-circle"
-                                className="close"
-                                onClick={() => {
-                                    window.history.pushState(null, "projects", "/projects");
-                                    this.setState({ showing: "none" });
-                                }}
-                            >
-                                close
-                            </FontAwesomeIcon>
                             {this.state.projects[this.state.showing]}
                         </Modal>
                     ]}
                 </PoseGroup>
+                {this.state.showing !== "none"?
+                    <div    className="close"
+                            onClick={() => {
+                                window.history.pushState(null, "projects", "/projects");
+                                this.setState({ showing: "none" });
+                            }}>
+                            <FontAwesomeIcon
+                                icon="times-circle"
+                            >
+                            close
+                            </FontAwesomeIcon>
+                    </div>:null
+                }
+
             </div>
         );
     }
