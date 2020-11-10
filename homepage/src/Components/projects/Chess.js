@@ -14,7 +14,7 @@ class Chess extends Component {
                         resualting number is good enough that it has defeated me
                         and my chess game application every time!
                     </p>
-                    <img src={require("../../Images/chessg.PNG")} />
+                    <img src={require("../../Images/chessg.png")} />
                 </div>
             </div>
         );

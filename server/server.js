@@ -8,7 +8,7 @@ let homepage_path = (path.join(__dirname + "/../homepage/build/"));
 
 const port = process.env.PORT || 3000;
 const app = express();
-let fileTypes = [".css", ".png", ".jpg", ".js", ".pdf", ".json"];
+let fileTypes = [".css", ".png", ".jpg", ".js", ".pdf", ".json", ".gif"];
 
 app.use(express.json());
 
@@ -54,7 +54,8 @@ app.get("/*", function(req, res) {
     for (let i = 0; i < fileTypes.length; i++)
         {
             p = req.path.substring(req.path.length-fileTypes[i].length);
-            if(p === fileTypes[i] || p === fileTypes[i].toUpperCase())
+            p = p.toLowerCase();
+            if(p === fileTypes[i])
                 flag = true;
         }
 //    console.log(p, flag)
