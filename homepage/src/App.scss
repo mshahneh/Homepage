@@ -1,9 +1,15 @@
 @import "./Constants/ConstantStyles";
 
+//@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 body {
     overflow-y: hidden;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
+
 .App {
     text-align: center;
     display: flex;

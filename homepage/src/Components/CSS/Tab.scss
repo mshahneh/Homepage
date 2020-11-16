@@ -8,6 +8,7 @@
 .tabItem{
   font-size: 1.1em;
   padding: 8px;
+  width: 105px;
   margin: 0.5vw;
   border: 0 solid transparent;
   border-radius: 16px;
@@ -22,4 +23,5 @@
   box-shadow: 0 2px 4px 0 rgba(5,5,5,0.15);
   background-color: rgba(255, 255, 255, 0.05);
   font-weight: 425;
+  color: $resumetextPrimaryDark
 }

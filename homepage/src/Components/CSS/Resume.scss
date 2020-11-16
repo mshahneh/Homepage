@@ -21,7 +21,7 @@
 #resume a {
     text-decoration: none;
     color: #888;
-    font-size: 0.9em;
+    font-size: 1.1em;
 }
 
 //#resume-title h1 {
@@ -70,7 +70,7 @@ p {
     position: relative;
     display: inline-block;
     text-align: left;
-    font-weight: bold;
+    font-weight: 700;
     font-size: $font-large;
     color: $resumetextPrimaryDark;
     width: 33%;
@@ -88,7 +88,7 @@ p {
 }
 
 .item span {
-    font-weight: bolder;
+    font-weight: 600;
     color: $resumeTextPrimary;
 }
 
@@ -98,7 +98,7 @@ p {
 
 .item .title {
     padding-top: 10px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: $font-medium;
     color: $resumeTextPrimary;
 }
@@ -116,8 +116,8 @@ p {
         position: relative;
         display: inline-block;
         text-align: left;
-        font-weight: bold;
-        font-size: 1.5em;
+        font-weight: 700;
+        font-size: 1.3em;
         width: 90%;
         margin: 0;
         padding-top: 15px;

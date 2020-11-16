@@ -3,8 +3,7 @@
 #projects {
     position: relative;
     height: 100vh;
-    width: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     background: $projectsBackground;
 }
 #projects .archive {
@@ -31,7 +30,7 @@
     position: relative;
     width: 23%;
     background-color: #fff;
-    margin: 4vh;
+    margin: 3vw;
     -webkit-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow:    1px 3px 5px 0px rgba(0, 0, 0, 0.1);
     box-shadow:         1px 3px 5px 0px rgba(0, 0, 0, 0.1);
@@ -139,14 +138,14 @@
         position: relative;
         width: 41%;
         background-color: #fff;
-        margin: 4vh;
+        margin: 2vw;
     }
 }
 @media only screen and (max-width: 600px) {
     .project-card {
         position: relative;
-        width: 93%;
+        width: 80%;
         background-color: #fff;
-        margin: 4vh;
+        margin: 4vw;
     }
 }

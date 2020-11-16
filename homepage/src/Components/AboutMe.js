@@ -48,7 +48,7 @@ class AboutMe extends Component {
                             I am Mohammad Reza Zare Shahneh, a master’s student in Computer Science at University of California Riverside where I am very fortunate to be advised by Samet Oymak and Amr Magdy.
                         </p>
                         <p>
-                            I am broadly interested in Machine Learning. My recent works have been focused on black box optimization applied for hyperparameter tuning.
+                            I am broadly interested in Machine Learning. My recent work have been focused on black box optimization applied for hyperparameter tuning.
                         </p>
                         <p>
                             Prior to joining UCR, I earned my Bachelor’s degree in Computer Science from Sharif University of Technology.

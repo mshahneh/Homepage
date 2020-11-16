@@ -34,11 +34,11 @@ class Resume extends Component {
                         <p>Research Interests</p>
                         <div>
                             <div className="item">
-                                <p className="content">Computer Vision</p>
-                                <p className="content">Algorithms </p>
-                                <p className="content">
-                                    Computation Theory and complexity
-                                </p>
+                                <p className="content"><span> • </span> Theoretical and Applied Machine Learning </p>
+                                <p className="content"><span> • </span> Black-box Optimization </p>
+                                <p className="content"><span> • </span> Black-box Optimization </p>
+                                <p className="content"><span> • </span> Medical Imaging </p>
+                                <p className="content"><span> • </span> Bioinformatics </p>
                             </div>
                         </div>
                     </div>
@@ -55,6 +55,7 @@ class Resume extends Component {
                                     M.Sc in Computer Science GPA:
                                     3.95/4
                                 </p>
+                                <p className={"content"}> Advisors: Samet Oymak, Amr Magdy </p>
                             </div>
                             <div className="item">
                                 <p className="title">
@@ -73,23 +74,24 @@ class Resume extends Component {
                         <p>Honors and Awards</p>
                         <div>
                             <div className="item">
+
                                 <p className="content">
-                                    <span>Silver medal </span>
+                                    <span> • </span> UCR’s Graduate Fellowship Award (2019-2020)
+                                </p>
+                                <p className="content">
+                                    <span> • </span> ranked 4<sup>th</sup> in Iran’s national university entrance exam (Konkour) for masters degree(2019)
+                                </p>
+                                <p className="content">
+                                    <span> • </span> Scholarship from Iran's National Elites Foundation for the first year of university
+                                </p>
+                                <p className="content">
+                                    <span> • </span> Ranked 6<sup>th</sup> in the ACM-IPC
+                                    Contest, Shiraz, Iran (2014)
+                                </p>
+                                <p className="content">
+                                    <span> • </span> Silver medal
                                     in the Iranian National Olympiad in
                                     Informatics (2013)
-                                </p>
-                                <p className="content">
-                                    UCR’s Graduate Fellowship Award (2019-2020)
-                                </p>
-                                <p className="content">
-                                    ranked 4th in Iran’s national university entrance exam (Konkour) for masters degree(2019)
-                                </p>
-                                <p className="content">
-                                    Scholarship from Iran's National Elites Foundation for the first year of university
-                                </p>
-                                <p className="content">
-                                    Ranked 6<sup>th</sup> in the ACM-IPC
-                                    Contest, Shiraz, Iran (2014)
                                 </p>
                             </div>
                         </div>
@@ -106,7 +108,8 @@ class Resume extends Component {
                                     With Prof. Oymak and Prof. Magdy
                                 </p>
                                 <p className="content">
-                                    Improving the speed and accuracy of a spatially-varrying coefficient model
+                                    Improving the speed and accuracy of a spatially-varying coeffcient model. We are combining and customizing
+                                    different black-box optimization methods, such as Hyperband, on our own spatially-varying weighting system.
                                 </p>
                             </div>
                             <div className="item">
@@ -118,7 +121,10 @@ class Resume extends Component {
                                     under supervision of Dr. Mostafa Kamali
                                 </p>
                                 <p className="content">
-                                    An end-to-end trainable scene text detector with our own synthetic text generator engine without any humanlabelled data
+                                    An end-to-end trainable scene text detector with our own synthetic text generator engine without any human
+                                    labelled data. we rendered the crawled words from Persian Wikipedia with different fonts and put them on
+                                    natural images. Then we used various augmentation techniques to build the data set. In the end we used
+                                    transfer learning on a model trained for English words to compute the weights for Persian words.
                                 </p>
                             </div>
                         </div>
@@ -213,12 +219,12 @@ class Resume extends Component {
                             <div className="item">
                                 <p className="title">Programming Languages</p>
                                 <p className="content">
-                                    Expert in: C++, Java, MATLAB, React
+                                    C++, Java, MATLAB, React, phyton, R, Java Script, React native, CSS, HTML
                                 </p>
-                                <p className="content">
-                                    Experience in : phyton, R, Java Script,
-                                    React native, CSS, HTML
-                                </p>
+                            </div>
+                            <div className={"item"}>
+                                <p className={"title"}> Libraries and Technologies </p>
+                                <p className={"content"}>Git, PyTorch, Keras, Colyseus, Unity 2D, MongoDB</p>
                             </div>
                             <div className="item">
                                 <p className="title">Team Work</p>
@@ -233,10 +239,10 @@ class Resume extends Component {
                         <p>Interests</p>
                         <div>
                             <div className="item">
+                                <p className="content">Puzzle Boxes</p>
                                 <p className="content">Painting</p>
                                 <p className="content">Video Games</p>
                                 <p className="content">Soccer</p>
-                                <p className="content">Playing Guitar</p>
                             </div>
                         </div>
                     </div>
