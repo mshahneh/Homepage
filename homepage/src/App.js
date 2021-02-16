@@ -15,12 +15,9 @@ import Contacts from "./Components/Contacts.js";
 import ReactGA from 'react-ga';
 
 
-function initializeReactGA() {
-    ReactGA.initialize('UA-187942706-1');
-    ReactGA.pageview('/');
-}
-
 let menuItems = ["about", "resume", "projects", "contact"];
+ReactGA.initialize('UA-187942706-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Screen = posed.div({
     inside: {
