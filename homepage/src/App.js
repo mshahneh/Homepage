@@ -12,7 +12,13 @@ import AboutMe from "./Components/AboutMe.js";
 import Resume from "./Components/Resume.js";
 import Projects from "./Components/Projects.js";
 import Contacts from "./Components/Contacts.js";
+import ReactGA from 'react-ga';
 
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-187942706-1');
+    ReactGA.pageview('/');
+}
 
 let menuItems = ["about", "resume", "projects", "contact"];
 
