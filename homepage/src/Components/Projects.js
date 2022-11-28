@@ -14,7 +14,7 @@ import Art from "./projects/Art.js";
 import Calc from "./projects/Calc.js";
 import Shelem from "./projects/Shelem.js";
 import Ronash from "./projects/ronash"
-import Covid from  "./projects/Covid"
+import Covid from "./projects/Covid"
 import Pedestrian from "./projects/Pedestrian";
 import Tab from "./Tab"
 
@@ -63,15 +63,15 @@ let Research = [
 let Applications = [
     {
         name: "Shelem",
-        title : "Shelem Application",
-        desc : "A multiplayer and online version of an extremely popular card game in Iran",
-        image : "shelem"
+        title: "Shelem Application",
+        desc: "A multiplayer and online version of an extremely popular card game in Iran",
+        image: "shelem"
     },
     {
         name: "Chess",
-        title : "Graphical Chess",
-        desc : "Written in java. supporting both 1v1 and AI",
-        image : "chess"
+        title: "Graphical Chess",
+        desc: "Written in java. supporting both 1v1 and AI",
+        image: "chess"
     },
     {
         name: "Calc",
@@ -87,9 +87,9 @@ let Applications = [
     },
     {
         name: "Site",
-        title:"Website Design",
-        desc:"a project for Ronash Corporation",
-        image:"site",
+        title: "Website Design",
+        desc: "a project for Ronash Corporation",
+        image: "site",
     },
     {
         name: "Art",
@@ -110,29 +110,29 @@ class Projects extends Component {
             Shelem: <Shelem />,
             Site: <Ronash />,
             Calc: <Calc />,
-            Covid: <Covid/>,
-            Pedestrian: <Pedestrian/>
+            Covid: <Covid />,
+            Pedestrian: <Pedestrian />
         };
         let url = window.location.href.toLowerCase();
         if (url.includes("/projects/vision"))
-            this.state = { projects: projects, selectedTab:0, showing: "Vision" };
+            this.state = { projects: projects, selectedTab: 0, showing: "Vision" };
         if (url.includes("/projects/covid"))
-            this.state = { projects: projects, selectedTab:0, showing: "Covid" };
+            this.state = { projects: projects, selectedTab: 0, showing: "Covid" };
         if (url.includes("/projects/pedestrian"))
-            this.state = { projects: projects, selectedTab:0, showing: "Pedestrian" };
+            this.state = { projects: projects, selectedTab: 0, showing: "Pedestrian" };
         else if (url.includes("/projects/unagi"))
-            this.state = { projects: projects, selectedTab:1, showing: "Unagi" };
+            this.state = { projects: projects, selectedTab: 1, showing: "Unagi" };
         else if (url.includes("/projects/chess"))
-            this.state = { projects: projects, selectedTab:1, showing: "Chess" };
+            this.state = { projects: projects, selectedTab: 1, showing: "Chess" };
         else if (url.includes("/projects/art"))
-            this.state = { projects: projects, selectedTab:1, showing: "Art" };
+            this.state = { projects: projects, selectedTab: 1, showing: "Art" };
         else if (url.includes("/projects/shelem"))
-            this.state = { projects: projects, selectedTab:1, showing: "Shelem" };
+            this.state = { projects: projects, selectedTab: 1, showing: "Shelem" };
         else if (url.includes("/projects/site"))
-            this.state = { projects: projects, selectedTab:1, showing: "Site" };
+            this.state = { projects: projects, selectedTab: 1, showing: "Site" };
         else if (url.includes("/projects/calc"))
-            this.state = { projects: projects, selectedTab:1, showing: "Calc" };
-        else this.state = { projects: projects, selectedTab:0, showing: "none" };
+            this.state = { projects: projects, selectedTab: 1, showing: "Calc" };
+        else this.state = { projects: projects, selectedTab: 0, showing: "none" };
     }
 
     handler(str) {
@@ -142,14 +142,14 @@ class Projects extends Component {
         });
     }
 
-    tab_item_click(num){
+    tab_item_click(num) {
         this.setState({ selectedTab: num });
         // window.history.pushState(null, menuItems[num], `/${menuItems[num]}`);
     }
 
     render() {
         let tabProjects = Research;
-        if(this.state.selectedTab == 1)
+        if (this.state.selectedTab == 1)
             tabProjects = Applications;
 
         return (
@@ -157,18 +157,19 @@ class Projects extends Component {
                 <div className={"title"}>
                     <h1>My Works!</h1>
                     <Tab tabItems={["Research", "Applications"]}
-                         onClick={(x) => this.tab_item_click(x)}
-                         activeTab={this.state.selectedTab}/>
+                        onClick={(x) => this.tab_item_click(x)}
+                        activeTab={this.state.selectedTab} />
                 </div>
                 <div className="archive">
                     {
                         tabProjects.map((item) => <ProjectCard
+                            key={item.name}
                             onClick={() => this.handler(item.name)}
                             title={item.title}
                             desc={item.desc}
                             image={item.image}
-                            />
-                            )
+                        />
+                        )
                     }
                 </div>
                 <PoseGroup>
@@ -186,18 +187,18 @@ class Projects extends Component {
                         </Modal>
                     ]}
                 </PoseGroup>
-                {this.state.showing !== "none"?
-                    <div    className="close"
-                            onClick={() => {
-                                window.history.pushState(null, "projects", "/projects");
-                                this.setState({ showing: "none" });
-                            }}>
-                            <FontAwesomeIcon
-                                icon="times-circle"
-                            >
+                {this.state.showing !== "none" ?
+                    <div className="close"
+                        onClick={() => {
+                            window.history.pushState(null, "projects", "/projects");
+                            this.setState({ showing: "none" });
+                        }}>
+                        <FontAwesomeIcon
+                            icon="times-circle"
+                        >
                             close
-                            </FontAwesomeIcon>
-                    </div>:null
+                        </FontAwesomeIcon>
+                    </div> : null
                 }
 
             </div>

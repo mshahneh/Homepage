@@ -127,15 +127,15 @@
 //}
 
 @import "../../Constants/ConstantStyles";
+
 #aboutme {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
     overflow: auto;
 }
 
-#aboutme > h1 {
+#aboutme>h1 {
     padding-top: 5vh;
     padding-bottom: 5vh;
     font-size: 3em;
@@ -151,47 +151,49 @@
     //margin-top: -20vh;
 }
 
-#mybio p{
+#mybio p {
     text-align: justify;
     margin-bottom: 2vh;
 }
 
-#mybio h1{
+#mybio h1 {
     margin-top: 0;
 }
 
-#mypic{
+#mypic {
     float: left;
     width: 45%;
     box-sizing: border-box;
     //margin: 0 3vw;
 }
 
-#mypic img{
+#mypic img {
     width: 100%;
 }
 
-#personal{
+#personal {
     margin: 0 5vw 5vh 5vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#aboutme .colorText{
+#aboutme .colorText {
     color: $primaryColor;
 }
 
 @media only screen and (max-width: 700px) {
-    #personal{
+    #personal {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
     }
-    #mybio{
+
+    #mybio {
         width: 90%;
     }
-    #mypic{
+
+    #mypic {
         width: 70%;
     }
 }

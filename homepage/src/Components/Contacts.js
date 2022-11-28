@@ -99,9 +99,7 @@ class Contacts extends Component {
                                     icon="envelope"
                                     className="reach-icon"
                                 />
-                                <a href="mailto:mzare008@ucr.edu">
-                                    mzare008@ucr.edu
-                                </a>
+                                mzare008@ucr.edu
                             </a>
                             <a
                                 href="mailto:mohammadreza.shahneh@gmail.com"
@@ -111,9 +109,7 @@ class Contacts extends Component {
                                     icon="envelope"
                                     className="reach-icon"
                                 />
-                                <a href="mailto:mohammadreza.shahneh@gmail.com">
-                                    mohammadreza.shahneh@gmail.com
-                                </a>
+                                mohammadreza.shahneh@gmail.com
                             </a>
                         </div>
                     </div>

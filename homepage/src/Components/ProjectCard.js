@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./CSS/Projects.scss";
-import ArrorRight from "react-icons/lib/fa/arrow-circle-o-right";
+import { FaArrowCircleRight } from "react-icons/fa";
 let Images = {
     vision: require("../Images/vision.jpg"),
     chess: require("../Images/chess.png"),
@@ -17,10 +17,10 @@ class ProjectCard extends Component {
     render() {
         return (
             <div className="project-card" onClick={this.props.onClick}>
-                <div class="project-image">
+                <div className="project-image">
                     <img src={Images[this.props.image]} />
                     <a className="parentbox">
-                        <ArrorRight className="childbox" />
+                        <FaArrowCircleRight className="childbox" />
                     </a>
                 </div>
                 <div>

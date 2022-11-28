@@ -6,8 +6,8 @@ class Tab extends Component {
     render() {
         return (<div className={"tab"}>
             {this.props.tabItems.map((item, index) =>
-                <div className={`tabItem ${this.props.activeTab == index? "activeTab" : "deactiveTab"}`}
-                     onClick={()=>this.props.onClick(index)}
+                <div key={item} className={`tabItem ${this.props.activeTab == index ? "activeTab" : "deactiveTab"}`}
+                    onClick={() => this.props.onClick(index)}
                 > {item} </div>)}
         </div>)
     }

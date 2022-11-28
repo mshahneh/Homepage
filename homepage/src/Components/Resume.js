@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import "./CSS/Resume.scss";
-import FaPDF from "react-icons/lib/fa/file-pdf-o";
+import { FaFilePdf } from "react-icons/fa";
 import Tab from "./Tab";
 
 class Resume extends Component {
     constructor(props) {
         super();
         this.state = {
-            selectedTab:0
+            selectedTab: 0
         }
     }
-    tab_item_click(num){
+    tab_item_click(num) {
         this.setState({ selectedTab: num });
         // window.history.pushState(null, menuItems[num], `/${menuItems[num]}`);
     }
@@ -20,7 +20,7 @@ class Resume extends Component {
                 <div className="title">
                     <h1>Resume</h1>
                     <a href={require("../Constants/CV.pdf")}>
-                        <FaPDF style={{ color: "#944" }} /> Download PDF version
+                        <FaFilePdf style={{ color: "#944" }} /> Download PDF version
                     </a>
                 </div>
                 {/*<div className={"title"}>*/}

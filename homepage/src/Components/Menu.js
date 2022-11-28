@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./CSS/Menu.scss";
-import FaHome from "react-icons/lib/go/home";
-import FileAlt from "react-icons/lib/go/file-media";
-import CheckList from "react-icons/lib/go/checklist";
-import Mail from "react-icons/lib/go/mail";
+// import FaHome from "react-icons/lib/go/home";
+// import FileAlt from "react-icons/lib/go/file-media";
+// import CheckList from "react-icons/lib/go/checklist";
+// import Mail from "react-icons/lib/go/mail";
 import Button from './Button';
 import styles from '../Constants/_ConstantStyles.scss'
 let menu_items = ["About Me", "Resume", "Projects", "Contact Me"];
@@ -11,13 +11,13 @@ let menu_items = ["About Me", "Resume", "Projects", "Contact Me"];
 class Menu extends Component {
     render() {
         // let barColor = styles.screenColors.split(' ')[this.props.selectedScreen].substring(0, 7);
-        return(
+        return (
             <div id={"Menu"} >
                 <div onClick={() => this.props.click(0)} className={"left"}> Mohammad Reza Zare Shahneh </div>
                 <div className={"right"}> {menu_items.map((item, index) =>
-                    <Button onClick={() => this.props.click(index)}
-                            text={item}
-                            isActive={index === this.props.selectedScreen}
+                    <Button key={index} onClick={() => this.props.click(index)}
+                        text={item}
+                        isActive={index === this.props.selectedScreen}
                     />)}
                 </div>
             </div>
