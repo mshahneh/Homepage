@@ -1,127 +1,32 @@
-body {
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
 .App {
   text-align: center;
-  display: flex;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.RightPanel {
-  width: 9%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  float: left;
-  background-color: #282c34;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-@media only screen and (max-width: 900px) {
-  .mainView {
-    width: 70%;
-    position: relative;
-  }
-}
-
-.mainView {
-  width: 91%;
-  position: relative;
-}
-
-/* .mainView>div {
+.screen-component {
+  background-color: #000;
   overflow: hidden;
-} */
+  height: 100vh;
+  box-sizing: border-box;
+}
 
-ul {
-  list-style: none;
+.general-container {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.screen-container {
+  height: 300vh;
   width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  border-bottom: 1px solid #383838;
-  padding: 15px 0 15px 0;
-  color: #999;
-  font-size: 0.8em;
-}
-
-li:hover {
-  color: #eee;
-  cursor: pointer;
-}
-
-.panelIcon {
-  text-align: center;
-  margin: auto;
-  font-size: 2.5em;
-  display: block;
-  padding-bottom: 5px;
+  background-color: aqua;
 }
 
 .screen {
-  width: 100%;
   height: 100vh;
-  /* position: absolute;
-  z-index: -1; */
+  position: sticky;
+  background-color: aquamarine;
+  top: 0;
 }
 
-.ActiveRitem {
-  color: #eee;
-}
-
-@media only screen and (max-width: 900px) {
-  .RightPanel {
-    width: 22%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    float: left;
-    background-color: #282c34;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  .mainView {
-    width: 78%;
-    position: relative;
-    /* overflow: hidden; */
-  }
-
-  .RightPanel img {
-    display: none;
-  }
+.illusion {
+  height: 10vh;
 }
