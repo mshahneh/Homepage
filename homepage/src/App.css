@@ -12,12 +12,19 @@
 .general-container {
   height: 100vh;
   overflow-y: scroll;
+  transition: 2s all ease;
 }
 
 .screen-container {
-  height: 300vh;
+  height: 240vh;
   width: 100%;
   background-color: aqua;
+  transition: 2s all ease;
+}
+
+.screen-container.active {
+  transform: translateY(200);
+  opacity: 1;
 }
 
 .screen {

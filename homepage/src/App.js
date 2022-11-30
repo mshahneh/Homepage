@@ -43,37 +43,34 @@ import './App.css';
 // }
 
 
-
-
 function App() {
 
   const ref = useRef(null);
   const [timeUpdate, setTimeUpdate] = useState(new Date());
-  const [adjusting, setAdjusting] = useState(7);
   const [topScrollPosition, setTopScrollPosition] = useState(0);
   const [BottomScrollPosition, setBottomScrollPosition] = useState(0);
 
   const adjust = () => {
-    console.log('here', adjusting);
     const middle = (ref.current.scrollHeight - ref.current.clientHeight) / 2;
     if (Math.abs(middle - ref.current.scrollTop) > 10) {
-      console.log('yeah?', middle, ref.current.scrollTop);
-      ref.current.scrollTop = ref.current.scrollTop + (middle - ref.current.scrollTop) * (1 / adjusting);
-      setAdjusting(adjusting - 1);
-      setTimeout(adjust, 10);
+      // console.log('yeah?', middle, ref.current.scrollTop);
+      let dir = middle - ref.current.scrollTop > 0 ? 1 : -1;
+      let range = Math.max(10, Math.abs(middle - ref.current.scrollTop) / 10);
+      ref.current.scrollTop += dir * range;
+      setTimeout(adjust, 100);
     }
     else {
-      console.log('done');
-      setAdjusting(1);
+      // console.log('done');
+      ref.current.scrollTop = middle;
     }
   }
 
   useEffect(() => {
-    setAdjusting(8);
     adjust();
   }, []);
 
   const onScroll = (e) => {
+    console.log('scrolling', e.target.scrollTop);
     const { scrollHeight, scrollTop, clientHeight } = e.target;
     const middle = (scrollHeight - clientHeight) / 2;
     const scroll = scrollHeight - scrollTop - clientHeight;
@@ -88,13 +85,13 @@ function App() {
     // }, 100)
 
     // setTimeUpdate(now);
-    if (adjusting == 1) {
-      setAdjusting(100);
+    if (middle - ref.current.scrollTop) {
+      // console.log('adjusting', adjusting);
       adjust();
     }
 
 
-    console.log('scroll', scrollHeight, scrollTop, clientHeight, scroll, middle, scrollTop - middle);
+    // console.log('scroll', scrollHeight, scrollTop, clientHeight, scroll, middle, scrollTop - middle);
     setTopScrollPosition(Math.max(0, Math.sqrt(2 * (middle - scrollTop))));
     setBottomScrollPosition(Math.max(0, Math.sqrt(2 * (middle - scroll))));
     if (scroll == 0 || scrollTop == 0) {
