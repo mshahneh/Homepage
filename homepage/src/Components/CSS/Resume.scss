@@ -1,0 +1,138 @@
+@import "../../Constants/ConstantStyles";
+
+#resume {
+    position: relative;
+    background-color: $resumeBackground;
+    color: $resumeText;
+    overflow-y: auto;
+    height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+    line-height: 1.5em;
+}
+
+#resume h1 {
+    padding-top: 5vh;
+    font-size: 3em;
+    color: $resumeText;
+}
+
+
+#resume a {
+    text-decoration: none;
+    color: #888;
+    font-size: 1.1em;
+}
+
+//#resume-title h1 {
+//    padding-bottom: 0;
+//    margin-bottom: 2vh;
+//    font-size: 3em;
+//}
+
+#resume a:hover {
+    color: #aaa;
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.resume-row {
+    box-sizing: border-box;
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    padding: 2%;
+    padding-bottom: 3%;
+    border-bottom: 2px dotted $resumeTextPrimary;
+}
+
+.last-row {
+    box-sizing: border-box;
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    padding: 2%;
+}
+
+#resume-main {
+    padding-bottom: 10vh;
+}
+
+#resume-main > div > p {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    font-weight: 700;
+    font-size: $font-large;
+    color: $resumetextPrimaryDark;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+}
+
+#resume-main > div > div {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: 66%;
+    margin: 0;
+    padding: 0;
+}
+
+.item span {
+    font-weight: 600;
+    color: $resumeTextPrimary;
+}
+
+#resume .item {
+    padding: 2vh 1vw;
+}
+
+.item .title {
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: $font-medium;
+    color: $resumeTextPrimary;
+}
+
+.item .content {
+    padding-left: 15px;
+    font-size: $font-medium;
+}
+
+@media only screen and (max-width: 900px) {
+    .resume-row {
+        flex-direction: column;
+    }
+    #resume-main > div > p {
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        font-weight: 700;
+        font-size: 1.3em;
+        width: 90%;
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #resume-main > div > div {
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    .last-row {
+        flex-direction: column;
+    }
+}

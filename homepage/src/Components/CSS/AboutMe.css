@@ -1,0 +1,198 @@
+/* //@import "../../Constants/ConstantStyles";
+//#aboutme {
+//    position: relative;
+//    width: 100%;
+//    height: 100vh;
+//    overflow-y: hidden;
+//    overflow-x: hidden;
+//    background-color: #fff;
+//}
+//
+//#color1 {
+//    position: absolute;
+//    height: 170vh;
+//    width: 30%;
+//    left: -10%;
+//    top: -50vh;
+//    transform: rotate(35deg);
+//    background-color: $primaryDarkColor;
+//    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//}
+//#color2 {
+//    position: absolute;
+//    height: 170vh;
+//    width: 30%;
+//    left: -18%;
+//    top: -50vh;
+//    transform: rotate(26deg);
+//    background-color: $accentColor;
+//    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//}
+//
+//#color3 {
+//    position: absolute;
+//    height: 170vh;
+//    width: 30%;
+//    right: -23%;
+//    bottom: -50vh;
+//    transform: rotate(30deg);
+//    background-color: $accentColor;
+//    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//}
+//
+//.about {
+//    box-sizing: border-box;
+//    position: relative;
+//    display: flex;
+//    flex-direction: row;
+//    align-items: center;
+//    top: 15vh;
+//    left: 15vw;
+//    width: 70%;
+//    height: 70vh;
+//    background-color: $darkGray;
+//    opacity: 0.98;
+//    border-radius: 5px;
+//    color: white;
+//    overflow-y: auto;
+//    padding-right: 6vw;
+//    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+//}
+//
+//.tr {
+//    flex: 1;
+//    top: 0;
+//    display: inline-block;
+//    width: 50%;
+//    text-align: center;
+//}
+//.about img {
+//    position: relative;
+//    max-height: 40vh;
+//    border-radius: 100%;
+//}
+//
+//@media only screen and (max-width: 1200px) {
+//    .about img {
+//        position: relative;
+//        max-height: 30vh;
+//        top: 5vh;
+//        margin: auto;
+//        border-radius: 100%;
+//    }
+//}
+//
+//@media only screen and (max-width: 900px) {
+//    .about {
+//        flex-direction: column;
+//        width: 90%;
+//        top: 15vh;
+//        left: 5vw;
+//        height: 60vh;
+//    }
+//
+//    .about h2 {
+//        margin-top: 10vh;
+//    }
+//
+//    .about img {
+//        position: relative;
+//        max-width: 30vw;
+//        top: 5vh;
+//        margin: auto;
+//        border-radius: 100%;
+//    }
+//
+//    #color1 {
+//        transform: rotate(45deg);
+//    }
+//    #color2 {
+//        top: -50vh;
+//        left: -30vh;
+//        width: 40%;
+//        transform: rotate(40deg);
+//    }
+//
+//    #color3 {
+//        transform: rotate(40deg);
+//    }
+//} */
+
+/* @import "../../Constants/ConstantStyles"; */
+
+#aboutme {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+#aboutme>h1 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 3em;
+}
+
+#mybio {
+    float: right;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    /* // color: $textDark; */
+    /* //margin-top: -20vh; */
+}
+
+#mybio p {
+    text-align: justify;
+    margin-bottom: 2vh;
+}
+
+#mybio h1 {
+    margin-top: 0;
+}
+
+#mypic {
+    float: left;
+    width: 45%;
+    box-sizing: border-box;
+    /* //margin: 0 3vw; */
+}
+
+#mypic img {
+    width: 100%;
+}
+
+#personal {
+    margin: 0 5vw 5vh 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aboutme .colorText {
+    /* // color: $primaryColor; */
+}
+
+@media only screen and (max-width: 700px) {
+    #personal {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #mybio {
+        width: 90%;
+    }
+
+    #mypic {
+        width: 70%;
+    }
+}

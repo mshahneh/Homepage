@@ -1,39 +1,3 @@
 .App {
   text-align: center;
 }
-
-.screen-component {
-  background-color: #000;
-  overflow: hidden;
-  height: 100vh;
-  box-sizing: border-box;
-}
-
-.general-container {
-  height: 100vh;
-  overflow-y: scroll;
-  transition: 2s all ease;
-}
-
-.screen-container {
-  height: 240vh;
-  width: 100%;
-  background-color: aqua;
-  transition: 2s all ease;
-}
-
-.screen-container.active {
-  transform: translateY(200);
-  opacity: 1;
-}
-
-.screen {
-  height: 100vh;
-  position: sticky;
-  background-color: aquamarine;
-  top: 0;
-}
-
-.illusion {
-  height: 10vh;
-}

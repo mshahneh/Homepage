@@ -1,120 +1,84 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import './App.css';
-// const isBrowser = typeof window !== `undefined`
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import ScreenComponent from './forcefulScroll';
+import { getDesignTokens } from './themes/theme';
+import { IconButton } from '@mui/material';
+import BedtimeIcon from '@mui/icons-material/Bedtime';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import ReactGA from 'react-ga';
+import AboutMe from "./Components/AboutMe.js";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
-// function getScrollPosition({ element, useWindow }) {
-//   if (!isBrowser) return { x: 0, y: 0 }
+let menuItems = ["about", "resume", "projects", "contact"];
+ReactGA.initialize('UA-187942706-1');
 
-//   const target = element ? element.current : document.body
-//   const position = target.getBoundingClientRect()
 
-//   return useWindow
-//     ? { x: window.scrollX, y: window.scrollY }
-//     : { x: position.left, y: position.top }
-// }
-
-// export function useScrollPosition(effect, deps, element, useWindow, wait) {
-//   const position = useRef(getScrollPosition({ useWindow }))
-
-//   let throttleTimeout = null
-
-//   const callBack = () => {
-//     const currPos = getScrollPosition({ element, useWindow })
-//     effect({ prevPos: position.current, currPos })
-//     position.current = currPos
-//     throttleTimeout = null
-//   }
-
-//   useLayoutEffect(() => {
-//     const handleScroll = () => {
-//       if (wait) {
-//         if (throttleTimeout === null) {
-//           throttleTimeout = setTimeout(callBack, wait)
-//         }
-//       } else {
-//         callBack()
-//       }
-//     }
-
-//     window.addEventListener('scroll', handleScroll)
-
-//     return () => window.removeEventListener('scroll', handleScroll)
-//   }, deps)
-// }
-
+// import Menu from "./Components/Menu"
+// import AboutMe from "./Components/AboutMe.js";
+// import Resume from "./Components/Resume.js";
+// import Projects from "./Components/Projects.js";
+// import Contacts from "./Components/Contacts.js";
+let reached = false;
+let adjusting = 0;
 
 function App() {
+  const [selectedScreen, setSelectedScreen] = React.useState(0);
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const [mode, setMode] = React.useState('light');
 
-  const ref = useRef(null);
-  const [timeUpdate, setTimeUpdate] = useState(new Date());
-  const [topScrollPosition, setTopScrollPosition] = useState(0);
-  const [BottomScrollPosition, setBottomScrollPosition] = useState(0);
+  React.useEffect(() => {
+    if (localStorage.getItem('mode') !== null)
+      setMode(localStorage.getItem('mode'));
+    else
+      setMode(prefersDarkMode ? 'dark' : 'light');
+  }, [prefersDarkMode]);
 
-  const adjust = () => {
-    const middle = (ref.current.scrollHeight - ref.current.clientHeight) / 2;
-    if (Math.abs(middle - ref.current.scrollTop) > 10) {
-      // console.log('yeah?', middle, ref.current.scrollTop);
-      let dir = middle - ref.current.scrollTop > 0 ? 1 : -1;
-      let range = Math.max(10, Math.abs(middle - ref.current.scrollTop) / 10);
-      ref.current.scrollTop += dir * range;
-      setTimeout(adjust, 100);
+  React.useEffect(() => {
+    localStorage.setItem('mode', mode)
+  }, [mode]);
+
+  const colorMode = React.useMemo(
+    () => ({
+      // The dark mode switch would invoke this method
+      toggleColorMode: () => {
+        setMode((prevMode) =>
+          prevMode === 'light' ? 'dark' : 'light',
+        );
+        // localStorage.setItem('mode', mode)
+      },
+    }),
+    [],
+  );
+
+  // Update the theme only if the mode changes
+  const theme = React.useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
+  const ColorModeContext = React.createContext({
+    toggleColorMode: () => {
+      // This is intentional
     }
-    else {
-      // console.log('done');
-      ref.current.scrollTop = middle;
-    }
-  }
-
-  useEffect(() => {
-    adjust();
-  }, []);
-
-  const onScroll = (e) => {
-    console.log('scrolling', e.target.scrollTop);
-    const { scrollHeight, scrollTop, clientHeight } = e.target;
-    const middle = (scrollHeight - clientHeight) / 2;
-    const scroll = scrollHeight - scrollTop - clientHeight;
-
-
-
-    // let now = new Date()
-    // var seconds = (now.getTime() - timeUpdate.getTime()) / 1000;
-    // const intervalID = setInterval(() => {
-    //   console.log("heyo");
-    //   ref.current.scrollTop = scrollTop + (scrollTop - middle) / 10
-    // }, 100)
-
-    // setTimeUpdate(now);
-    if (middle - ref.current.scrollTop) {
-      // console.log('adjusting', adjusting);
-      adjust();
-    }
-
-
-    // console.log('scroll', scrollHeight, scrollTop, clientHeight, scroll, middle, scrollTop - middle);
-    setTopScrollPosition(Math.max(0, Math.sqrt(2 * (middle - scrollTop))));
-    setBottomScrollPosition(Math.max(0, Math.sqrt(2 * (middle - scroll))));
-    if (scroll == 0 || scrollTop == 0) {
-      alert('move')
-    }
-  }
+  });
 
   return (
-    <div className="screen-component" style={{ height: `calc(100vh - ${topScrollPosition}px)`, marginTop: topScrollPosition, marginBottom: -BottomScrollPosition }}>
-      <div className="general-container" onScroll={onScroll} ref={ref}>
-        <div className="screen-container" >
-          <div className="screen" >
-            <p> hi </p>
-            <h1>Hi</h1>
-            <h1>Hi</h1>
-            <h1>Hi</h1>
-            <h1>Hi</h1>
-            <h1>Hi</h1>
-            screen 1
-          </div>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        {/* <div><ScreenComponent screen={"hi"}></ScreenComponent>
+          <ScreenComponent screen={"bye"}></ScreenComponent>
+        </div> */}
+        <div>
+          <AboutMe />
         </div>
-      </div >
-    </div>
+        <IconButton style={{ zIndex: 5, color: "black", position: "absolute", top: 10, right: 10 }} onClick={colorMode.toggleColorMode} aria-label="delete">
+          {mode === 'light' ? <BedtimeIcon /> : <LightModeIcon />}
+        </IconButton>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 }
 

@@ -1,0 +1,24 @@
+@import "../../Constants/ConstantStyles";
+
+.button{
+    padding: 1em;
+    font-size: 1.1em;
+    color: $textDark;
+}
+
+.deactive-button:hover{
+  cursor: pointer;
+  color: $textGray;
+}
+
+.active-button{
+  color: $primaryColor;
+  font-weight: 450;
+}
+
+@media only screen and (max-width: 700px) {
+  .button{
+    padding: 0.5em;
+    font-size: 0.9em;
+  }
+}
